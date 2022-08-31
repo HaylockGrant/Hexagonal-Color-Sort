@@ -1,2 +1,2 @@
 # Hexagonal-Color-Sort
-Still working on git
+This project will hopefully be a color sort tool where you can enter hex color values and have them organized in a hexagonal form by color. This idea is originally intended to help me organize my spray paint cans, but I'm sure it will have better applications. 

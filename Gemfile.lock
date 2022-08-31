@@ -1,0 +1,20 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    color (1.8)
+    color_sort (1.1.0)
+      color
+      colorscore
+    colorscore (0.0.5)
+      color
+    shoes (3.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  color_sort (~> 1.1)
+  shoes (~> 3.0, >= 3.0.1)
+
+BUNDLED WITH
+   2.1.4

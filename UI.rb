@@ -1,12 +1,11 @@
-#using shoesrb I plan to create a test empty window
-require 'shoes'
+#using tk I plan to create a test empty window
+require 'tk'
 
 #create a new window
-Shoes.app(width: 300, height: 400) do
-    #create a new background
-    background rgb(0, 0, 0)
-    #create a new text
-    para "Hello World"
-    end
+root = TkRoot.new { title "Hello, World!" }
+TkLabel.new(root) do
+   text 'Hello, World!'
+   pack { padx 15 ; pady 15; side 'left' }
 end
+Tk.mainloop
 #end of the program

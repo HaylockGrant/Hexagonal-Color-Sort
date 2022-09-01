@@ -18,9 +18,8 @@ for i in 0..unsorted_colors.length()-1
     end
 end
 
-UI.new()
-UI.init()
-
+userInterface = UI.new()
+userInterface.start()
 
 # Time to ramble
 # I need to render a hexagonal grid

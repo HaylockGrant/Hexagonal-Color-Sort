@@ -3,10 +3,13 @@
 require 'tk'
 
 class UI
-    root = TkRoot.new { title "Hexagonal Grid" }
+    attr
+    def initialize
+        @root = TkRoot.new { title "Hexagonal Grid" }
+    end
 
-    def init
-        return Tk.mainloop()
-
+    def start()
+        @root.mainloop
     end
 end
+

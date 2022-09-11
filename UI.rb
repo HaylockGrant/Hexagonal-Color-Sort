@@ -1,15 +1,19 @@
-#using tk I plan to create a test empty window
-#!/usr/bin/env ruby
-require 'tk'
+#using gosu i plan to create a UI
+require 'gosu'
 
-class UI
-    attr
-    def initialize
-        @root = TkRoot.new { title "Hexagonal Grid" }
-    end
-
-    def start()
-        @root.mainloop
-    end
+class Tutorial < Gosu::Window
+  def initialize
+    super 640, 480
+    self.caption = "Tutorial Game"
+  end
+  
+  def update
+    # ...
+  end
+  
+  def draw
+    # ...
+  end
 end
 
+Tutorial.new.show

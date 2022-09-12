@@ -18,7 +18,7 @@ for i in 0..unsorted_colors.length()-1
 end
 
 
-userInterface = UI.new()
+userInterface = UI.new(unsorted_colors.length(), sorted_colors)
 userInterface.start()
 
 # Time to ramble

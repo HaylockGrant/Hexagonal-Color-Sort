@@ -1,7 +1,7 @@
 #using gosu i plan to create a UI
 require 'gosu'
 
-class Tutorial < Gosu::Window
+class UI < Gosu::Window
   def initialize
     super 640, 480
     self.caption = "Tutorial Game"
@@ -14,6 +14,9 @@ class Tutorial < Gosu::Window
   def draw
     # ...
   end
+
+  def start
+    show
+  end
 end
 
-Tutorial.new.show

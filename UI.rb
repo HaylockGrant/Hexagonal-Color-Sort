@@ -1,5 +1,6 @@
 #using gosu i plan to create a UI
 require 'gosu'
+require_relative 'Color'
 require_relative 'ColorBox'
 
 puts $global_height

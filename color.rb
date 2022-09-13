@@ -1,14 +1,18 @@
-#set up gems
-#!/usr/bin/env ruby
-#require_relative 'DistanceMap'
+
 require 'color_sort'
 require 'gosu'
 require_relative 'UI'
 require_relative 'ColorBox'
+#require_relative 'DistanceMap'
+
 #initilize the colors
 unsorted_colors = ["fbba00","faef73","e4e025","f0e436","feed01","c5dda9","c8c8c8","d2c2dd","ffffff","daeeed","00b0c7","00a0d0","6397c6","006376","8d4f92","6f307f","8d135e","731e25","3e150f","b81528","b0131e","e5321b","ed5a15","ef7510","ed8a0b","f4a88e","e93e50","82441f","875a45","523b1b","645f25","072432","0b0b0b","0c1514","003020","005029","026e57","66b99b","7fb225"]
+$global_width = 250
+$global_height = 25
+
 #Colorsort sorts the colors and returns sorted_colors
 sorted_colors = ColorSort.sort(unsorted_colors)
+
 #output the sorted colors in order they are in relation the original list IE the first inpout is not the 32nd item on the list
 for i in 0..unsorted_colors.length()-1
     for j in 0..sorted_colors.length()-1
@@ -39,5 +43,5 @@ userInterface.start()
 #Colorspace is quite the complex thing... I'm not sure what I'm going to do to integrate everythin
 #https://www.alanzucconi.com/2015/09/30/colour-sorting/
 
-#I'd like to use http://shoesrb.com/walkthrough/ for the renderer
+#I'd like to use gosu for the renderer
 

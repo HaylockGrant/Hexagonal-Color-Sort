@@ -4,7 +4,7 @@ require_relative 'ColorBox'
 
 class UI < Gosu::Window
   def initialize(height, sorted_colors)
-    super 50, 50*height
+    super $global_width, $global_height*height
     self.caption = "Color Sort"
     @sorted_images = []
     for i in 0..sorted_colors.length()-1
@@ -20,7 +20,7 @@ class UI < Gosu::Window
   #this code isn't allways updated 60 times a second and should be used for drawing
   def draw
     for i in 0..@sorted_images.length()-1
-        @sorted_images[i].boxImage.draw(0, i*50, 0)
+        @sorted_images[i].boxImage.draw(0, i*$global_height, 0)
     end
   end
 

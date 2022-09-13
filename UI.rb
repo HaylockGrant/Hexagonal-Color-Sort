@@ -1,6 +1,6 @@
 #using gosu i plan to create a UI
 require 'gosu'
-require_relative 'Color'
+require_relative 'ColorMan'
 require_relative 'ColorBox'
 
 puts $global_height
@@ -10,7 +10,7 @@ class UI < Gosu::Window
     self.caption = "Color Sort"
     @sorted_images = []
     for i in 0..sorted_colors.length()-1
-        @sorted_images[i] = ColorBox.new(sorted_colors[i])
+        @sorted_images[i] = ColorMan.new(sorted_colors[i])
     end
   end
  

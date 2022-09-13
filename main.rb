@@ -1,8 +1,7 @@
-
 require 'color_sort'
 require 'gosu'
 require_relative 'UI'
-require_relative 'Color'
+require_relative 'ColorMan'
 require_relative 'ColorBox'
 #require_relative 'DistanceMap'
 

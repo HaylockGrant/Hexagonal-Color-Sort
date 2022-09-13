@@ -1,7 +1,7 @@
 require 'gosu'
 
-class Color
-    attr_accessor :R :G :B :H :S :L :V :gosuColor :hex
+class ColorMan
+    attr_accessor :R, :G, :B, :H, :S, :L, :V, :gosuColor, :hex
     def initialize(hex)
         @hex = hex
         @R = hex[0..1].to_i(16)
@@ -13,3 +13,4 @@ class Color
         # @V = 0
         @gosuColor = ['ff' + @hex].pack("H*")
     end
+end

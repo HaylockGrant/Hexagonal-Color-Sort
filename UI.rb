@@ -39,8 +39,8 @@ class UI < Gosu::Window
     end
 
     #@ballShape.draw($global_width/2, $global_height * 2, 0.0, 1.0, 1.0, @sorted_images[0].color.gosuColor)
-    @ballShape.draw($global_width/2, $global_height * 2, 0, 1.0, 1.0, 0xff_F1F90B)
-
+    #@ballShape.draw($global_width/2, $global_height * 2, 0, 1.0, 1.0, 0xff_F1F90B)
+    @ballShape.draw($global_width/2, $global_height * 2, 0, 1.0, 1.0, @sorted_images[0].ColorMan.int)
   end
 
   def start

@@ -8,6 +8,9 @@ class CircleMan
     @radius = radius
     @color = colorMan
     @image = Gosu::Image.new(Circle.new(@radius))
+    if (@color.kind_of? ColorMan)
+      rescue "ColorMan expected"
+    end
   end
 
   def draw(x,y, absolute:false, color:@color)

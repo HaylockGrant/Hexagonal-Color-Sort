@@ -7,7 +7,7 @@ require_relative 'CircleMan'
 puts $global_height
 class UI2 < Gosu::Window
   def initialize(width = $global_width, height = $global_height)
-    super width * $global_arraylength, height * global_arraylength
+    super width * $global_arraylength, height * $global_arraylength
     self.caption = "Color Sort"
 
     @ballShape = CircleMan.new($global_width/2, ColorMan.new('F1F90B'))

@@ -23,8 +23,8 @@ for i in 0..unsorted_colors.length()-1
         end
     end
 end
-#userInterface = UI.new(sorted_colors.length(), sorted_colors, unsorted_colors)
-#userInterface.start()
+userInterface = UI.new(sorted_colors.length(), sorted_colors, unsorted_colors)
+userInterface.start()
 
 userInterface2 = UI2.new()
 userInterface2.start()

@@ -10,7 +10,7 @@ class UI < Gosu::Window
     super width * $global_arraylength, height * global_arraylength
     self.caption = "Color Sort"
 
-    @ballShape = Gosu::Image.new(Circle.new($global_width/2))
+    @ballShape = CircleMan.new($global_width/2, ColorMan.new('F1F90B'))
   end
  
   #this code is updated 60 times a second and is meant for the game logic
@@ -22,9 +22,7 @@ class UI < Gosu::Window
   
   #this code isn't allways updated 60 times a second and should be used for drawing
   def draw
-    for i in 0..@sorted_images.length()-2
-        @ballShape.draw(i*$global_width + $global_width/2, $global_height * 2, 0, 1.0, 1.0, @sorted_images[i].color.int)
-    end
+    @ballShape.draw($global_width/2, $global_height * 2, absolute:true)
   end
 
   def start

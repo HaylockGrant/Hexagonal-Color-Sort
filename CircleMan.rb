@@ -1,6 +1,6 @@
 require "gosu"
 require_relative 'Circle'
-
+require_relative 'ColorMan' 
 class CircleMan
   attr_reader :radius, :color, :image
 
@@ -15,6 +15,8 @@ class CircleMan
       x = x - @radius
       y = y - @radius
     end
-    @image.draw(x,y,0,1.0,1.0,color.int)
+    puts color.class.to_s
+    color = color.int
+    @image.draw(x,y,0,1.0,1.0,color)
   end
 end

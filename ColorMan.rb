@@ -45,4 +45,7 @@ class ColorMan
             end
         end
     end
+    def int
+        return @int
+    end
 end

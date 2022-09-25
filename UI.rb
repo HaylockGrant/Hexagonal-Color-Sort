@@ -19,7 +19,7 @@ class UI < Gosu::Window
     end
 
     @ballShape = CircleMan.new($global_width/2, ColorMan.new('F1F90B'))
-    
+
   end
  
   #this code is updated 60 times a second and is meant for the game logic
@@ -42,9 +42,7 @@ class UI < Gosu::Window
     #@ballShape.draw($global_width/2, $global_height * 2, 0.0, 1.0, 1.0, @sorted_images[0].color.gosuColor)
     #@ballShape.draw($global_width/2, $global_height * 2, 0, 1.0, 1.0, 0xff_F1F90B)
     #@ballShape.draw($global_width/2, $global_height * 2, 0, 1.0, 1.0, ColorMan.new("FF00FF").int)
-    for i in 0..@sorted_images.length()-2
-        @ballShape.draw($global_width, $global_height * 2, absolute:true)
-    end
+    @ballShape.draw($global_width, $global_height * 2, absolute:true)
   end
 
   def start

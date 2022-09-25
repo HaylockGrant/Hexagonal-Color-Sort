@@ -3,7 +3,7 @@ require 'gosu'
 #require_relative 'UI'
 require_relative 'ColorMan'
 require_relative 'ColorBox'
-require_relative 'UItwo'
+require_relative 'UI2'
 #require_relative 'DistanceMap'
 
 #initilize the colors
@@ -26,7 +26,7 @@ end
 #userInterface = UI.new(sorted_colors.length(), sorted_colors, unsorted_colors)
 #userInterface.start()
 
-userInterface2 = UItwo.new()
+userInterface2 = UI2.new()
 userInterface2.start()
 
 

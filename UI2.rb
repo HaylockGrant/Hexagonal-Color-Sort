@@ -5,7 +5,7 @@ require_relative 'ColorBox'
 require_relative 'CircleMan'
 
 puts $global_height
-class UI < Gosu::Window
+class UI2 < Gosu::Window
   def initialize(width = $global_width, height = $global_height)
     super width * $global_arraylength, height * global_arraylength
     self.caption = "Color Sort"

@@ -6,7 +6,7 @@ class CircleMan
 
   def initialize(radius, colorMan = ColorMan.new("FFFFFF"))
     @radius = radius
-    @color = ColorMan
+    @color = colorMan
     @image = Gosu::Image.new(Circle.new(@radius))
   end
 

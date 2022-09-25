@@ -9,7 +9,7 @@ class CircleMan
     @color = colorMan
     @image = Gosu::Image.new(Circle.new(@radius))
     if !(@color.kind_of? ColorMan)
-      rescue "ColorMan expected"
+      raise "ColorMan expected"
     end
   end
 

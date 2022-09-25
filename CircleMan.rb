@@ -16,7 +16,7 @@ class CircleMan
       y = y - @radius
     end
     puts color.class.to_s
-    color = color.int
+    color = color.intC
     @image.draw(x,y,0,1.0,1.0,color)
   end
 end

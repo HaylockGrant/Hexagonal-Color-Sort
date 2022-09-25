@@ -1,13 +1,13 @@
 require 'gosu'
 class ColorMan
-    attr_accessor :R, :G, :B, :H, :S, :L, :V, :gosuColor, :hex, :int
+    attr_accessor :R, :G, :B, :H, :S, :L, :V, :gosuColor, :hex, :intC
     def initialize(hex)
         @hex = hex
         @R = hex[0..1].to_i(16)
         @G = hex[2..3].to_i(16)
         @B = hex[4..5].to_i(16)
         @gosuColor = [@hex + 'ff'].pack("H*") #this is saved as a string of special characters]
-        @int = ('FF' + @hex.to_s).to_i(16) #converts the hex string to integer form for gosu compontents
+        @intC = ('FF' + @hex.to_s).to_i(16) #converts the hex string to integer form for gosu compontents
         # //R, G and B input range = 0 ÷ 255
         # //H, S and V output range = 0 ÷ 1.0
         
@@ -44,8 +44,5 @@ class ColorMan
                 @H -= 1
             end
         end
-    end
-    def int
-        return @int
     end
 end

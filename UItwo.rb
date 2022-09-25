@@ -4,15 +4,11 @@ require_relative 'ColorMan'
 #require_relative 'ColorBox'
 require_relative 'CircleMan'
 
-puts $global_height
 class UItwo < Gosu::Window
   def initialize(width = $global_width, height = $global_height)
     super width * $global_arraylength, height * $global_arraylength
     self.caption = "Color Sort"
     color = ColorMan.new("F1F90B")
-    if!(color.kind_of? ColorMan)
-      raise "ColorMan expected"
-    end
     @ballShape = CircleMan.new($global_width/2, color)
   end
  
@@ -31,6 +27,5 @@ class UItwo < Gosu::Window
   def start
     show
   end
-
 end
 

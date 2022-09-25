@@ -26,7 +26,7 @@ end
 #userInterface = UI.new(sorted_colors.length(), sorted_colors, unsorted_colors)
 #userInterface.start()
 
-userInterface2 = UITwo.new()
+userInterface2 = UItwo.new()
 userInterface2.start()
 
 
